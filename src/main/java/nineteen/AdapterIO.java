@@ -1,7 +1,5 @@
 package nineteen;
 
-import eighteen.Rashiryaem.AmigoOutputStream;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

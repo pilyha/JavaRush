@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class Baket {
-    public final static ArrayList<Cat> Products = new ArrayList<>();
+    public final static ArrayList<Product> Products = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         String name = null;
@@ -26,8 +26,8 @@ public class Baket {
                 price = reader.readLine();
                 System.out.println("Введите кол-во продукта: ");
                 count = Integer.parseInt(reader.readLine());
-                Cat cat = new Cat(name,price,count);
-                Products.add(cat);
+                Product product = new Product(name,price,count);
+                Products.add(product);
             }
 
             printList();
@@ -49,13 +49,13 @@ public class Baket {
             }
         }
 
-        public static class Cat {
+        public static class Product {
             private String name;
             private String price;
             private int count;
 
 
-            Cat(String name, String price, int count) {
+            Product(String name, String price, int count) {
                 this.name = name;
                 this.price = price;
                 this.count = count;
